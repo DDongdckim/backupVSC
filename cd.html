@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    
+    <style>
+        @media(orientation:landscape){
+            body{
+                grid-auto-flow:column;
+            }
+        }
+        @keyframes drift{
+            from{
+                transform: rotate(0deg);
+            }
+            from{
+                transform: rotate(360deg);
+            }
+        }
+        .center{
+            margin:auto;
+            position:absolute;
+            top:30%;
+            left:20%;
+            bottom:30%;
+            right:70%;
+            animation: drift 30000ms infinite linear;
+        }
+    </style>
+    <style>
+    .box{
+        margin:auto;
+        position:absolute;
+        top:30%;
+        left:70%;
+        bottom:30%;
+        right:20%;
+        border:0;
+        width:350px;
+        height: 350px;
+        background-color: gray;
+        border-radius: 5%;
+    }
+    
+
+
+    </style>
+    <style>
+        .album{
+            margin:auto;
+            position:absolute;
+            top:15%;
+            left:19%;
+            bottom:30%;
+            right:20%;
+        }
+    </style>
+    <style>
+        .Counting{
+            margin:auto;
+            position:absolute;
+            top:4%;
+            left:29%;
+            bottom:30%;
+            right:20%;
+            font-size: 23px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <style>
+        .player{
+            margin:auto;
+            position:absolute;
+            top:70%;
+            left:5%;
+            bottom:4%;
+            right:20%;
+
+        }
+    </style>
+    
+</head>
+<body>
+    <img Src="cddddddd.jpg" 
+        style="width:300px; height:300px;"
+        class="center"
+    />
+    <div class=" box">
+        <img
+        src="counting stars.jpg"
+        width="210px"
+        height="210px"
+        class="album">
+    <p class="Counting">Counting Stars</p>
+    <audio controls autoplay class="player"  >
+        <source src="BEO   Counting Stars Feat Beenzino Counting StarsLyrics.mp3">
+    </audio>
+
+    
+</body>
+</html>

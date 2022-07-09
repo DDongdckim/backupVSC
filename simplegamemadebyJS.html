@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word game made by DDong</title>
+    <style>
+        input{
+            width: 50px;
+            height:50px;
+            font-size:40px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <input class="input" maxlength="1"/>
+    <input class="input" maxlength="1"/>
+    <input class="input" maxlength="1"/>
+    <input class="input" maxlength="1"/>
+    <input class="input" maxlength="1"/>
+    <button>GO!</button>
+
+    <script>
+        var answer = "phone";
+
+        document.querySelector("button").addEventListener("click", function(){
+            var input = document. querySelectorAll(".input");
+
+            for(var i=0; i<5; i++){
+                if(input[i].value==answer[i]){
+                    input[i].style.backgroundColor = "green";
+                }
+                else if(answer.includes(input[i].value)){
+                    input[i].style.backgroundColor = "yellow";
+                    if(input[i].value ==""){
+                        input[i].style.backgroundColor = "red";
+                    }
+                }
+                else{
+                    input[i].style.backgroundColor  
+                 = "red";
+                }
+                input[i].classList.remove("input");
+            }
+            var gameend = true;
+            for(var i=0; i<5; i++){
+                if(input[i].style.backgroundColor != "green"){
+                    gameend = false;
+                }
+            }
+
+            if(!gameend){
+                var template = `<br/>
+                <input class="input"/>
+    <input class="input" maxlength="1"/>
+    <input class="input" maxlength="1"/>
+    <input class="input" maxlength="1"/>
+    <input class="input maxlength="1"/>`;
+            }
+            document.querySelector("body")
+            .insertAdjacentHTML("beforeend", template);
+        })
+        
+       
+    </script>
+
+</body>
+</html>

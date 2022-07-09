@@ -1,0 +1,130 @@
+body{
+    background-color: black;
+}
+
+.snow{
+ position: absolute;
+ background-color: white;
+ width: 10px;
+ height: 10px;
+ border-radius: 5px;
+ animation: fall;
+ animation-duration: 5s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+
+}
+.BIGSnow{
+position: absolute;
+ background-color: white;
+ width: 20px;
+ height: 20px;
+ border-radius: 10px;
+ box-shadow: 0px 0px 5px 5px white;
+ animation: big_fall;
+ animation-duration: 10s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+
+
+
+}
+.box{
+    opacity:0%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    animation: rainbow;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes rainbow{
+    0% {
+        opacity: 100%;
+        background-color: red;
+        width: 10px;
+        height: 10px;
+    }
+    16% {
+        background-color: orange;
+        width: 15px;
+        height: 15px;
+    }
+    32% {
+        background-color: yellow;
+        width: 10px;
+        height: 10px;
+    }
+    48% {
+        background-color: green;
+        width: 15px;
+        height: 15px;
+    }
+    64%{
+        background-color: blue;
+        width: 10px;
+        height: 10px;
+    }
+    80%{
+        background-color: darkblue;
+        width: 40px;
+        height: 40px;
+    }
+    100% {
+        opacity: 100%;
+        background-color: purple;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+@keyframes fall {
+    0% {
+         margin-top: 0vh;
+         opacity: 100%
+    }
+    20% {
+        opacity: 100%
+    }
+    80% {
+        opacity: 100%
+    }
+    100% {
+        margin-top: 100vh;
+        opacity: 0%;
+    }
+}
+@keyframes big_fall{
+    0% {
+        margin-top: 0vh;
+        margin-left: 0px;
+        opacity: 100%
+        
+   }
+   20% {
+       margin-left: 100px;
+       opacity: 100%
+    
+   }
+   40%{
+       margin-left: 0px;
+   }
+   60%{
+       margin-left: 100px;
+   }
+   80% {
+       margin-left: 0px;
+        opacity: 100%
+
+   }
+   100% {
+       margin-top: 100vh;
+       margin-left: 100px;
+       opacity: 0%;
+
+   }
+}

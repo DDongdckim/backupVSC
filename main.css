@@ -1,0 +1,48 @@
+p{text-align:center;}
+div{background-color: white;}
+
+
+#paragraph{color:rgb(39, 32, 22);}
+.center{
+    text-align: left;
+    color: chocolate;
+}
+p.center{
+    text-align: right;
+    color:darkgoldenrod;
+}
+td{
+    height:6cm; 
+    width: 6cm;
+    background-color: turquoise;
+
+}
+
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    height: 100vh;
+    display:flex;
+}
+article{
+    margin:15px;
+    flex: 1;
+    display: grid;
+    grid-template-columns:repeat(9, 1fr);
+    border:1px solid;
+    background:tomato;
+}
+
+div{
+    box-shadow: 1px 1px 0 1px;
+    grid-column: auto / span 2;
+}
+
+
+div:nth-child(10n),
+div:nth-child(10n-9) {
+    grid-column: auto / span 1
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    
+    <script>
+        /*class CustomInput extends HTMLElement{
+            connectedCallback(){
+                this.render();
+            }
+            render(){
+                let label = document.createElement("label");
+                label.innerHTML = "insert name please";
+                this.appendChild(label);
+                let input = document.createElement("input");
+                this.appendChild(input);
+            }
+            static get observedAttributes(){
+                return['name'];
+            }
+            attributeChangedCallback(){
+                this.render();
+            }
+        }
+        customElements.define("custom-input",CustomInput);*/
+        
+        /*(async()=>{
+            try{
+                const formData = new FormData();
+                formData.append('name','Jeffrey');
+                formData.append('birth',1000);
+                const result = await axios.post('https://www.zerocho.com/api/post/formdata',formData)
+                console.log(result);
+                console.log(result.data);
+
+            }catch(error){
+                console.error(error);
+            }
+        })();*/
+    </script>
+    <script>
+        axios.get('https://www.zerocho.com/api/get')
+        .then((result)=>{
+            console.log(result);
+            console.log(result.data);
+        })
+        .catch((error)=>{
+            console.error(error);
+        });
+    </script>
+    
+    
+</body>
+</html>

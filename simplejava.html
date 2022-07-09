@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+    <meta charset = "UTF-8">
+</head>
+<body>
+    <h1 id="text">This is Javascript code.</h1>
+    <h1 id="text2">This is Javascript code.</h1>
+
+    <script>
+        var text = document.querySelector("#text");
+        text.onclick = function(){
+            text.style.color = "red";
+        }
+        
+    </script>
+    <script>
+         var text2 = document. querySelector("#text2");
+        text2.onclick = function(){
+            text2.style.color ="blue";
+        }
+    </script>
+    <script>
+        alert('Warning!!!');
+        confirm('Are you really going to come to this page?');
+        prompt("What is your name?", "guest");
+        document.write("This is a document written with Javascript");
+    </script>
+    
+    <h3 id = "selector">type in your name</h3>
+
+    <script>
+        var text2 = document. querySelector("#selector");
+        selector.onclick = function(){
+            var name = prompt("What is your name?");
+            document.write('<h2>'+ name + ' hello! Nice to meet you!</h2>');
+        }
+
+    </script>
+    
+    <h2>What is your name?</h2>
+    
+    <script>
+        var name = prompt("What is your name?");
+        document.write('<h2>'+ name + ' hello! Nice to meet you!</h2>');
+    </script>
+    <script>
+        var maxNumber = Number.MAX_VALUE;
+        var minNumber = Number.MIN_VALUE;
+
+        document.write('MAX:'+ maxNumber + '<br/>');
+        document.write('MIN:'+ minNumber + '<br/>');
+
+        var maxNumber2 = Number.MAX_SAFE_INTEGER;
+        var minNumber2 = Number.MIN_SAFE_INTEGER;
+
+        document.write('MAX:'+ maxNumber2 + '<br/>');
+        document.write('MIN:'+ minNumber2);
+    </script>
+    </script>
+  
+
+</body>
+</html>

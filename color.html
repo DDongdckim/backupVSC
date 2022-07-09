@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(-45deg,rgb(255, 117, 117),rgb(121, 238, 160),rgb(248, 246, 115),rgb(138, 247, 255));
+            background-size:400% 400%;
+            animation: gradient 15s ease infinite;
+            height:100vh;
+        }
+        @keyframes gradient{
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position:0% 50%;
+            }
+        }
+        .box{
+            width: 100px;
+            height:100px;
+            background-color: cadetblue;
+            margin: 30px auto 30px auto;
+            text-align:center ;
+        }
+        #scale:hover{
+            transform: scale(1.5);
+            transform-origin:  0 100%;
+            transition: transform 1s;
+        }
+        #rotateX:hover{
+            transform:rotateX(45deg);
+            transform-origin: 100% 0;
+            transition: transform 1s;
+        }
+        #rotateY:hover{
+            transform:rotateY(45deg);
+            transform-origin:  0 100%;
+            transition: transform 1s;
+        }
+        #rotateZ:hover{
+            transform:rotateZ(45deg);
+            transition: transform 1s;
+        }
+        #rotateZtopleft:hover{
+            transform:rotateZ(45deg);
+            transform-origin: 100% 0;
+            transition: transform 1s;
+        }
+        #skewX:hover{
+            transform:skewX(45deg);
+            transition: transform 1s;
+        }
+        #skewY:hover{
+            transform:skewY(45deg);
+            transition: transform 1s;
+        }
+        #translateX:hover{
+            transform:translateX(50%);
+            transition: transform 1s;
+        }
+        #translateY:hover{
+            transform:translateY(50%);
+            transition: transform 1s;
+        }
+        .photo{
+            width: 100px;
+            height:100px;
+            background-color: cadetblue;
+            margin: 30px auto 30px auto;
+            text-align:center ;
+        }
+        #countingstarsscale:hover{
+            transform: scale(1.5);
+            transform-origin:  0 100%;
+            transition: transform 1s;
+        }
+        #countingstarsrotateX:hover{
+            transform:rotateX(45deg);
+            transform-origin: 100% 0;
+            transition: transform 1s;
+        }
+        #countingstarsrotateY:hover{
+            transform:rotateY(45deg);
+            transform-origin:  0 100%;
+            transition: transform 1s;
+        }
+        #countingstarsrotateZ:hover{
+            transform:rotateZ(45deg);
+            transition: transform 1s;
+        }
+        #countingstarsrotateZtopleft:hover{
+            transform:rotateZ(45deg);
+            transform-origin: 100% 0;
+            transition: transform 1s;
+        }
+        #countingstarsskewX:hover{
+            transform:skewX(45deg);
+            transition: transform 1s;
+        }
+        #countingstarsskewY:hover{
+            transform:skewY(45deg);
+            transition: transform 1s;
+        }
+        #countingstarstranslateX:hover{
+            transform:translateX(50%);
+            transition: transform 1s;
+        }
+        #countingstarstranslateY:hover{
+            transform:translateY(50%);
+            transition: transform 1s;
+        }
+        .animation{
+            position:absolute;
+            left:100px;
+            width:100px;
+            height:50px;
+            margin-left: -50px;
+            background-color: black;
+            color: white;
+            animation-name: hi;
+            animation-duration: 2s;
+            animation-duration: leaner;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
+        @keyframes hi{
+            0%{
+                left:100px;
+            }
+            100%{
+                left:300px
+            }
+        }
+       
+    
+
+
+
+           
+        
+
+    </style>
+</head>
+<body>
+    <div class="box"id="scale">scale1.5<br>bottom left</div>
+    <div class="box"id="rotateX">rotateX<br>45deg<br>top right</div>
+    <div class="box"id="rotateY">rotateY<br>45deg<br>bottom left</div>
+    <div class="box"id="rotateZ">rotateZ<br>45deg</div>
+    <div class="box"id="rotateZtopleft">rotateZ<br>45deg<br>top left</div>
+    <div class="box"id="skewX">skewX<br>45deg</div>
+    <div class="box"id="skewY">skewY<br>45deg</div>
+    <div class="box"id="translateX">translateX<br>50%</div>
+    <div class="box"id="translateY">translateY<br>50%</div>
+
+    <div class="photo" id="countingstarsscale"><img src="counting stars.jpg" width="100px" height="100px"></div><br>
+
+    <div class="photo" id="countingstarsrotateX"><img src="counting stars.jpg"width="100px" height="100px"></div><br>
+
+    <div class="photo" id="countingstarsrotateY"><img src="counting stars.jpg"width="100px" height="100px"></div><br>
+
+    <div class="photo" id="countingstarsrotateZ"><img src="counting stars.jpg"width="100px" height="100px"></div><br>
+
+    <div class="photo" id="countingstarsrotateZtopleft"><img src="counting stars.jpg"width="100px" height="100px"></div><br>
+
+    <div class="photo" id="countingstarsskewX"><img src="counting stars.jpg"width="100px" height="100px"></div><br>
+
+    <div class="photo" id="countingstarsskewY"><img src="counting stars.jpg"width="100px" height="100px"></div><br>
+    <div class="photo" id="countingstarstranslateX"><img src="counting stars.jpg"width="100px" height="100px"></div><br>
+    <div class="photo" id="countingstarstranslateY"><img src="counting stars.jpg"width="100px" height="100px"></div><br>
+    <div class="animation"></div>
+
+    <table>
+        <tr>
+            <td class="photo" id="countingstarsscale" ><img src="counting stars.jpg" width="100px" height="100px"></td>
+            <td class="photo" id="countingstarsrotateX" ><img src="counting stars.jpg" width="100px" height="100px"></td>
+            <td class="photo" id="countingstarsrotateY" ><img src="counting stars.jpg" width="100px" height="100px"></td>
+        
+           
+        <tr>
+            <td class="photo" id="countingstarsrotateZ" ><img src="counting stars.jpg"width="100px" height="100px"></td>
+            <td class="photo" id="countingstarsrotateZtopleft" ><img src="counting stars.jpg"width="100px" height="100px"></td>
+            <td class="photo" id="countingstarsskewX" ><img src="counting stars.jpg"width="100px" height="100px"></td>
+        </tr>
+        <tr>
+            <td class="photo" id="countingstarsskewY" ><img src="counting stars.jpg"width="100px" height="100px"></td>
+            <td class="photo" id="countingstarstranslateX" ><img src="counting stars.jpg"width="100px" height="100px"></td>
+            <td class="photo" id="countingstarstranslateY" ><img src="counting stars.jpg"width="100px" height="100px"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
